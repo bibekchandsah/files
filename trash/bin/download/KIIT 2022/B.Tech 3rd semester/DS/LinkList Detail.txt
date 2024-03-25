@@ -1,0 +1,95 @@
+// Define a node structure
+struct node {
+    int data; // The data stored in the node
+    struct node *next; // The pointer to the next node
+};
+
+// Define a linked list structure
+struct linked_list {
+    struct node *head; // The pointer to the first node
+    struct node *tail; // The pointer to the last node
+    int size; // The number of nodes in the list
+};
+
+// Create a new linked list and return a pointer to it
+struct linked_list *create_list() {
+    struct linked_list *list = malloc(sizeof(struct linked_list)); // Allocate memory for the list
+    list->head = NULL; // Initialize the head pointer to NULL
+    list->tail = NULL; // Initialize the tail pointer to NULL
+    list->size = 0; // Initialize the size to 0
+    return list; // Return the pointer to the list
+}
+
+// Create a new node with the given data and return a pointer to it
+struct node *create_node(int data) {
+    struct node *node = malloc(sizeof(struct node)); // Allocate memory for the node
+    node->data = data; // Set the data field to the given data
+    node->next = NULL; // Initialize the next pointer to NULL
+    return node; // Return the pointer to the node
+}
+
+// Add a new node with the given data at the end of the list
+void add_node(struct linked_list *list, int data) {
+    struct node *node = create_node(data); // Create a new node with the data
+    if (list->head == NULL) { // If the list is empty
+        list->head = node; // Set the head pointer to the new node
+        list->tail = node; // Set the tail pointer to the new node
+    } else { // If the list is not empty
+        list->tail->next = node; // Set the next pointer of the last node to the new node
+        list->tail = node; // Set the tail pointer to the new node
+    }
+    list->size++; // Increment the size of the list by 1
+}
+
+// Delete a node with the given data from the list if it exists and return 1 if successful, 0 otherwise
+int delete_node(struct linked_list *list, int data) {
+    if (list->head == NULL) { // If the list is empty
+        return 0; // Return 0 indicating failure
+    }
+    struct node *prev = NULL; // Declare a pointer to store the previous node of the current node
+    struct node *curr = list->head; // Declare a pointer to store the current node and initialize it to the head of the list
+    while (curr != NULL) { // Loop through the list until curr is NULL
+        if (curr->data == data) { // If the current node has the data we want to delete
+            if (prev == NULL) { // If there is no previous node, i.e. curr is the head of the list
+                list->head = curr->next; // Set the head pointer to point to the next of curr
+            } else { // If there is a previous node
+                prev->next = curr->next; // Set the next pointer of prev to point to the next of curr, skipping curr
+            }
+            if (curr == list->tail) { // If curr is also the tail of the list, i.e. it is the last node
+                list->tail = prev; // Set the tail pointer to point to prev, which is now the last node or NULL if prev is also NULL
+            }
+            free(curr); // Free up memory allocated for curr, deleting it from memory 
+            list->size--; // Decrement size of list by 1 
+            return 1; // Return 1 indicating success 
+        }
+        prev = curr; // Update prev to point to curr 
+        curr = curr->next; // Update curr to point to its next 
+    }
+    return 0; // Return 0 indicating failure, i.e. no such data found in any nodes 
+}
+
+// Find a node with given data in a linked list and return a pointer to it if found, NULL otherwise 
+struct node *find_node(struct linked_list *list, int data) {
+    struct node *curr = list->head; // Declare a pointer to store current nodes and initialize it with head of list 
+    while (curr != NULL) { // Loop through all nodes until curr is NULL 
+        if (curr->data == data) { // If current nodes has given data 
+            return curr; // Return pointer to current node 
+        }
+        curr = curr->next; // Update curr to point to next node 
+    }
+    return NULL; // Return NULL indicating no such data found in any nodes 
+}
+
+// Display the data of all nodes in a linked list 
+void display_list(struct linked_list *list) {
+    struct node *curr = list->head; // Declare a pointer to store current nodes and initialize it with head of list 
+    printf("["); // Print opening bracket for list 
+    while (curr != NULL) { // Loop through all nodes until curr is NULL 
+        printf("%d", curr->data); // Print data of current node 
+        if (curr->next != NULL) { // If current node is not the last node 
+            printf(", "); // Print a comma and a space as separator 
+        }
+        curr = curr->next; // Update curr to point to next node 
+    }
+    printf("]\n"); // Print closing bracket and a new line for list 
+}
