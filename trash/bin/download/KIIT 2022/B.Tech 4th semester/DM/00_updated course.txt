@@ -1,0 +1,8 @@
+Equivalence relation, equivalence classes and partition of sets, Partial ordering relation, Hasse diagram, Maximal, minimal, least, greatest elements, LUB, GLB.
+
+Solution of Linear Recurrence Relation with constant coefficients by Substitution Method
+Solution of Linear homogeneous Recurrence Relation with constant coefficients using generating function.
+
+Semi group, monoid, Group, Abelian group. Properties of groups, Cyclic groups and its generator, Ring, Integral domain, Field.
+
+Basic Terminology of graphs, Adjacency and incident matrices, walk, trail, Paths, Circuit, connected graph, shortest path algorithms (Dijkstra),
