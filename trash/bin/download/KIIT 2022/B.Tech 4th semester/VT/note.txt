@@ -1,0 +1,214 @@
+SAP :- system application and products in data processing
+ABAP :- advance business application programming
+
+user-name = KIIT24-113
+PASSWORD = ABAP@#499
+
+
+project name : Z_KIIT24_113_22054029_Myproject
+name : Z_KIIT24_113_22054029_MyPackage
+Description : describe i.e. package for assignment 1
+software component : browse > home
+
+
+project explorer
+favourable package > add package > add package name by selecting previous package name
+select the package > file > new > others > ABAP program > next 
+name : z_kiit24_113_22054029_program1
+descripton : describe
+
+
+to print 
+write 'hello bibek'.
+right click on progam and click on activate
+
+run 
+run as > abap application console
+
+
+
+
+workbench tool
+tool > abap workbench > development > abap editor
+program : Z_KIIT24_113_22054029_programName
+titel : my second program
+type : executable program 
+save
+
+package: Z_KIIT24_113_22054029_mypackage
+local object
+
+
+variable
+data no1 type i.
+data: no1 type i.
+tata: no2 type i value 15, sum type i.
+sum = no1 + no2.
+write sum.
+
+check : to check program error
+activate  > tick : to activate
+execute : to run the program
+
+
+user input
+parameters no1 type i.
+parameters no2 type i.
+
+
+
+
+
+
+for website 
+------------
+
+https://calcutta.cob.csuchico.edu:8037/sap/bc/gui/sap/its/webgui/
+
+system :- CAL
+client :- 105
+user :- username
+password :- password
+
+tool > abap workbench > development > abap editor > double click
+Program :- Z_KIIT24_113_22054029_ProgramName > create
+title :- program name
+type :- executable program > save
+package :- Z_KIIT24_113_22054029_MyPkg > local object
+
+<==== write program ====>
+check > activate > select program > check > back > execute > enter value > execute
+
+to edit the program again
+---------------------------
+back > back
+Program : Z_KIIT24_113_22054029_ProgramName > change 
+
+
+---structure---
+data: begin of student,
+rollno(8) type n,
+name(20) type c,
+branch(20) type c,
+end of student.
+student-rollno = 4029.
+student-name = 'Bibek'.
+student-branch = 'cse'.
+write: 'roll no. = ', student-rollno, / 'name =', student-name, / 'branch = ', student-branch.
+
+
+
+---tables----
+types: begin of emp,
+empno(s) type n,
+empname(20) type c,
+sal type i,
+end of emp.
+data: e1 type emp.
+data: e2 type emp.
+data: e3 type emp.
+emp_tab type table of emp.
+e1-empno = 4029.
+e1-empname = 'bibek'.
+e1-sal = 200000.
+e2-empno = 4029.
+e2-empname = 'shyam'.
+e2-sal = 15000.
+append e1 to emp_tab.
+append e2 to emp_tab.
+read table emp_tab into e3 index 1.
+write: 'emp no = ', e3-empno, /
+'emp name = ', e3-ename, /
+'salary = ', e3-sal.
+
+
+
+
+
+
+
+
+product id	pname	   price	quantity
+----------	------	   -----	---------
+101		keyboard   500		20
+102		mouse	   250		15
+103		monitor	   7000		10
+
+
+
+
+
+
+overview --> object navigator --> choose package -->
+write :- Z_KIIT24_113_package (package name) --> search
+yes
+short description :- 
+continue
+create request F8
+short descriptioon :- request to create package
+save
+continue
+
+
+right click on package name of object list
+create --> function group
+
+function group name :- Z_KIIT24_113_4029
+short desc :- my function group KIIT24_113
+save
+package:- Z_KIIT24_113_package
+continue
+function group:- Z_KIIT24_113_4029
+continue
+
+
+right click on function group name and click on activate & continue
+
+
+right click on function group and click on create --> create function module 
+
+function module:- Z_KIIT24_113_4029_findsum
+function group:- Z_KIIT24_113_4029 (default)
+short text:- function to find the sum of number
+save
+
+
+in import
+parameter name :- num
+typeing :- type
+associated type :- I
+sort text :- number to find square
+
+in export
+parameter name :- sqr
+typeing :- type
+associated type :- I
+sort text :- return square of the number 
+save
+
+souce code
+sqr = num*num.
+
+
+check 
+activate
+continue
+test & execute
+
+enter data --> execute
+
+
+
+OS- 6.5         11
+DS:- 14.5       10.5
+COA :- 17       11
+DBMS :- 14      09
+OOPJ :- 14.5    09
+STW :- 17.5     15
+
+
+
+
+
+
+
