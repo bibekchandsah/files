@@ -1,0 +1,140 @@
+---[ Starting with a story ]---
+===============================
+
+
+Then
+
+In the 1950s, long, tedious processes caused the industry to have a workforce that built itself on intense labor processes. The workforce had little-to-no education, a hardened skillset and a fluctuating pay rate. Not only were employees often disgruntled, they also worked in difficult, and often hazardous, environments day-in and day-out. Due to the unsteady and off-putting conditions, the industry saw a decline in employment interest. That is, until the industry underwent a positive transformation.
+
+And Now
+
+As technology advances, so does manufacturing.  Today’s plant floor looks a lot different than it did 50 years ago. Machine automation replaced manual labor. The Internet connected our machines and increased communications. The industry has seen substantial growth in productivity, efficiency and overall employee satisfaction.
+
+A recent and relevant example of new technology that has the industry buzzing is 3D Printing. Because of its ability to quickly take design concepts and rapidly produce goods that can be sold as finished products, 3D printing is seen as one of the next “new things” for manufacturers. 
+
+Technology advances continue to change the manufacturing industry for the better.Factories and industries are getting smart day by day for maxmizing their gains. These advances have created new types of manufacturing jobs that require more technical ability and critical thinking from employees who operate computer driven equipment, processes and environments.  There are really good, well paid positions that need to be filled across the industry. This new, innovative workplace welcomes both millennials and the existing skilled workforce as manufacturers fill the jobs the momentum of the trillion-dollar business has left open.
+
+ And for the context of 2023 a new era of AI has begun. Multimillionare companies are boosting their workforces and advancing to further smart industries and remotely operated as well as automated machines that are far better than few decades ago.  My only question is what’s smart factories, what objective do they have, how they can further revolutionize the world and society. So for that i want to introduce my friend .... for the introduction to smart factories.
+
+
+
+---[ Introduction ]---
+======================
+
+
+As the name implies, a smart factory is… smart. An interconnected network of machines, communication mechanisms, and computing power, the smart factory is a cyber-physical system that uses advanced technologies such as artificial intelligence (AI) and machine learning to analyse data, drive automated processes, and learn as it goes.
+
+
+Smart factories and smart manufacturing are part of the technological transformation known as Industry 4.0 or the Fourth Industrial Revolution. Each of the first three industrial revolutions was born out of an innovative new technology that completely changed the way we worked and manufactured goods: namely, the steam engine, the assembly line, and the power of the computer. Today, the fourth revolution is driven by digital transformation and intelligent automation.
+
+ A smart factory is a digitised production facility capable of continuously collecting and sharing data through the use of connected devices, machinery and manufacturing systems. Decision making to upgrade the process and addressing any issues that may exist will then be based on these data. A range of technologies such as AI, Big Data Analytics, Cloud Infrastructure and Industrial Internet of ThingsIoT are helping to make intelligent manufacturing processes in a smart factory.
+
+ The intelligent factories enable the monitoring of all production processes, from supply chain management to manufacturing tools and even work performed by one operator on the shop floor, through a link between electronic and physical worlds. A series of benefits for operators, such as the ability to adapt and easily optimise operations, shall be provided through fully commutative collaborative production systems.
+
+In the past few years, it’s become increasingly apparent to business leaders that digital transformation is an urgent priority for supply chains and manufacturing operations that hope to be competitive and resilient in the 2020s. The pandemic further exposed global supply chain weaknesses and industry vulnerabilities. An article in Forbes magazine reiterated this, stating “COVID-19 has shown the world something that the manufacturing industry should already know. Traditional supply chains and manufacturing ecosystems are failing and we need to shift to a more adaptable, agile solution that is fully digitally enabled.”
+
+
+
+---[Principles And Technologies in Smart Factories]---
+===============================================================
+
+
+Objectives are the goals one would like to achieve. Smart factories also have set of objectives that can be used to describe why they exist in the first place.
+
+The key principles behind the factory of the future are connectivity alongside data analysis and diagnostics; leading to less shutdowns, improved processes and optimised facilities.
+
+A smart factory is based around using the latest technologies and connectivity to drive improvements to processes.
+
+Using technologies such as IoT and artificial intelligence allows for a more responsive, yet also predictive, line; making the most of the available resources to deliver cost-effective and efficient manufacturing.
+
+What differes in between normal industries and smart industry is use of variety of different technologies related to the fourth industrial revolution (Industry 4.0) to optimise smart manufacturing processes.
+
+These technologies include:
+
+- Sensors
+	Sensors on devices and machines are used at specific stages of the manufacturing process to collect data that can be used to monitor processes. For example, sensors can monitor temperature or other variables and either self-correct any problems or alert staff. These sensors can be linked to a network to provide joined-up monitoring across several machines.
+
+- Cloud Computing
+		Storing and processing data collected from the sensors is achieved through cloud computing. This if more flexible and cheaper than traditional on-site storage, allowing large amounts of data to be uploaded, stored, and assessed to provide feedback for decision-making in real time.
+
+- Big Data Analytics
+		As more data is collected, it is possible to use it to provide insights into how a production process is performing. Big data allows for error patterns to be spotted and predictive quality assurance undertaken with a greater degree of accuracy. This data can be shared between different factories or even organisations to solve common problems and further optimise processes.
+
+- Virtual and Augmented Reality
+				Augmented reality is a digital technology that involves digital information being overlayed across reality and viewed via a smartphone, while virtual reality is a more immersive virtual world that requires special glasses. Both of these technologies can help smart factory operators to organise products, production tasks and the maintenance and repair of equipment.
+
+- Digital Twins
+	     A digital twin can be used to represent a process or physical object and simulate performance in the real world. This can lead to efficiency improvements while also aiding control and operations planning.
+
+In order to describe how smart factories work, I would like to invite my friend .... on describe this in brief.
+
+
+
+---[How Smart Factories Work And Its Structures]---
+===================================================
+
+We often talk about automated processes as if they were unique to a smart factory – yet automation and robotics have been in use for decades in manufacturing operations. Many traditional factories use automated machines such as barcode scanners, cameras, and digitised production equipment in various parts of their operation.
+
+But those devices are not interconnected. The people, assets, and data management systems in a traditional factory all operate in isolation from one another and must be manually coordinated and integrated on an ongoing basis.
+
+A smart digital factory works by integrating machines, people, and Big Data into a single, digitally connected ecosystem. A smart factory not only curates and analyses data, it actually learns from experience. It interprets and gains insights from data sets to forecast trends and events and to recommend and implement smart manufacturing workflows and automated processes. A smart factory undergoes continuous procedural improvement to self-correct and self-optimise – it can teach itself (and humans) to be more resilient, productive, and safe.
+
+
+Structure Of Smart factory is described using this figure.
+
+            [DESCRIBE_THE_FIGURE_FROM_PRESENTATION_FILE]
+
+
+- Data acquisition:
+		 Artificial intelligence and modern database technologies allow for the curation and acquisition of disparate sets of useful data across the business, supply chain, and the world. By way of sensors and gateways, the Industrial Internet of Things (IIoT) allows connected machines to gather data into the system. Through myriad other data portals, AI-powered systems can compile data sets related to performance, market trends, logistics, or any other potentially relevant source.
+
+- Data analysis: 
+	      Machine learning and intelligent business systems use advanced analytics and modern data management solutions to make sense of all the disparate data gathered. IIoT sensors can warn when machines need repair or servicing. Market and operational data can be compiled to spot opportunities and risks. Workflow efficiencies can be studied over time to optimise performance and auto-correct as warranted. In fact, the data sets that can be compared and analysed present an almost infinite possibility of combinations to inform digital factory optimisation and supply chain forecasting.
+
+- Intelligent factory automation:
+				Once the data acquisition and analysis have taken place, workflows are established and instructions are sent to the machines and devices within the system. These devices may be within the four walls of the factory or far afield in the logistics or manufacturing links in the supply chain. Smart workflows and processes are continually being monitored and optimised. If a news report warns of a spike in demand for a certain product, 3D printer workflows can be instructed to ramp up production priority for that item. If a shipment of raw materials is delayed, inventory buffers can be put into rotation to eliminate any disruption.
+
+
+
+---[Benefits Of Smart Factories]---
+===================================
+
+You would like to know why would someone would implement bunch of nerd tech in industry when we have cheap hardworking labours available in plenty amount. But many businesses have made do with supply chain operations and systems that have basically not changed in decades. But with consumer expectations and economic uncertainty at an all-time high, supply chain managers need solutions that can provide measurable and significant benefit – and can bring it quickly.
+
+ According to Forbes magazine, in 2017 just 43% of manufacturers had smart factory initiatives underway. By 2019, 68% of them did. For companies that invest in digital transformation and smart factory solutions, there is potential for significant business benefits, including:   
+
+- Productivity and efficiency: Throughout its history, manufacturing has primarily been about reacting – looking at an event or a trend that has already happened and then trying to steer the business in a different direction after the fact. Smart factory technologies are designed to reduce the need for reactive practices and move supply chain management into a more resilient and responsive mode. The use of predictive analytics and Big Data analysis allows for optimised processes to be identified and put in place. Just-in-time inventory management, accurate demand forecasting, and improved speed to market are a few of the efficiency benefits that smart factories deliver. Augmented by digital insights, the people working in smart factories are also able to streamline their efforts, adding to the overall productivity of the operation. In their 2019 smart factory study, Deloitte tells us that “Companies report up to 12% gains in areas like manufacturing output, factory utilisation, and labour productivity after they invested in smart factory initiatives. Moreover, manufacturers with smart factories will likely surpass traditional factories with 30% higher net labour productivity by 2030.” 
+
+- Sustainability and safety:
+			 Consumers are increasingly willing to spend a bit more for products they know to be sourced and manufactured using socially and environmentally responsible methods. Modern smart factory technologies make it easier than ever for businesses to identify and implement opportunities for more green, safe, and socially responsible manufacturing practices. Digital innovations such as blockchain and RFID sensors can be used by smart factory managers to ensure irrefutable provenance and quality control of all materials and supplies – coming from even the most distant links in the supply chain. And closer to home, the International Society of Automation reports that robots and automated devices can help reduce or eliminate three out of the five leading causes for workplace injuries.
+
+- Product quality and customer experience: 
+					Much like the kids’ telephone game, traditional manufacturers often had a difficult time ensuring their directives were being accurately received and followed by the lower tier suppliers and manufacturers in their supply chains. In the smart factory, cloud connectivity and end-to-end visibility in smart factories brings real-time insights and recommendations to all tiers of the manufacturing process. The ability for rapid customisation and response to shifting trends means that products are tightly up to date with customer desires. Advanced analysis of system data quickly spots weaknesses or areas for improvement. This leads to improved competitiveness in the market, better product reviews, and fewer costly returns or recalls.
+
+
+---[How To Smart Factories]---
+==============================
+
+Upgrading a factory so that is ‘smart’ can seem like it would be an expensive exercise, but you can make fast and effective changes without having to replace every machine in your manufacturing chain.
+
+1. Define Clear Objectives:
+Clearly outline the goals and purpose of your smart factory. Identify key performance indicators (KPIs) and set measurable targets for increased efficiency, productivity, and quality.
+
+2. Conduct Comprehensive Risk Assessment:
+Evaluate potential risks to data security and operational continuity. Prioritize cybersecurity threats and assess vulnerabilities to develop a robust risk mitigation plan.
+
+3. Implement Data Protection Measures:
+Adopt encryption, access controls, and secure data storage solutions to safeguard sensitive information. Establish data governance policies to ensure compliance with privacy regulations and protect intellectual property.
+
+4. Deploy Robust Cybersecurity Protocols:
+Integrate advanced cybersecurity measures, including firewalls, intrusion detection systems, and regular security audits. Stay updated on the latest threats and continuously enhance defenses to prevent cyber attacks.
+
+5. Ensure Interoperability and Connectivity:
+Select compatible and standardized technologies to facilitate seamless communication between devices and systems. Prioritize interoperability to maximize the efficiency of your smart factory's operations.
+
+6. Invest in Employee Training:
+Train employees on cybersecurity best practices and the proper use of smart factory technologies. Foster a culture of cybersecurity awareness to mitigate the risk of human error.
+
+7. Monitor and Evaluate Performance:
+Implement real-time monitoring systems to track the performance of your smart factory. Regularly evaluate the effectiveness of cybersecurity measures and make adjustments based on emerging threats and technological advancements.
+
