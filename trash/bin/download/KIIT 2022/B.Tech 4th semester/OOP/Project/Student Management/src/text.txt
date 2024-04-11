@@ -1,0 +1,116 @@
+int id = 0;
+        while (true) {
+            System.out.print("Enter student ID: ");
+            if (scanner.hasNextInt()) {
+                id = scanner.nextInt();
+                break;
+            } else {
+                System.out.println("Please enter the student ID in number format.");
+                scanner.next(); // Consume invalid input
+            }
+        }
+
+
+
+
+String name;
+        while (true) {
+            System.out.print("Enter student name: ");
+            name = scanner.nextLine();
+            if (name.matches("[a-zA-Z ]+")) {
+                name = capitalizeEachWord(name);
+                break;
+            } else {
+                System.out.println("Name should contain only alphabetic characters.");
+            }
+        }
+
+
+
+import java.io.*;
+import java.time.LocalDate;
+import java.time.format.DateTimeFormatter;
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.Iterator;
+import java.util.Map;
+import java.util.Scanner;
+
+class Student {
+    // Student class code...
+}
+
+class StudentManagementSystem {
+    // StudentManagementSystem class code...
+}
+
+public class Main {
+    // File path to store usernames and passwords
+    private static final String CREDENTIALS_FILE = "credentials.txt";
+
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        StudentManagementSystem sms = new StudentManagementSystem();
+
+        System.out.println("Welcome to Student Management System");
+
+        sms.login(); // Display login menu
+
+        while (true) {
+            // StudentManagementSystem menu code...
+        }
+    }
+
+    // Method to write username and password to file
+    private static void writeCredentialsToFile(String username, String password) {
+        try (FileWriter writer = new FileWriter(CREDENTIALS_FILE, true);
+             BufferedWriter bw = new BufferedWriter(writer);
+             PrintWriter out = new PrintWriter(bw)) {
+            out.println(username + "," + password); // Format: username,password
+        } catch (IOException e) {
+            System.out.println("An error occurred while writing to the file.");
+            e.printStackTrace();
+        }
+    }
+
+    // Method to check if a username exists in the file
+    private static boolean usernameExists(String username) {
+        try (BufferedReader reader = new BufferedReader(new FileReader(CREDENTIALS_FILE))) {
+            String line;
+            while ((line = reader.readLine()) != null) {
+                String[] parts = line.split(",");
+                if (parts.length == 2 && parts[0].equals(username)) {
+                    return true;
+                }
+            }
+        } catch (IOException e) {
+            System.out.println("An error occurred while reading the file.");
+            e.printStackTrace();
+        }
+        return false;
+    }
+
+    // Method to validate username and password from file
+    public static boolean validateCredentialsFromFile(String username, String password) {
+        try (BufferedReader reader = new BufferedReader(new FileReader(CREDENTIALS_FILE))) {
+            String line;
+            while ((line = reader.readLine()) != null) {
+                String[] parts = line.split(",");
+                if (parts.length == 2 && parts[0].equals(username) && parts[1].equals(password)) {
+                    return true;
+                }
+            }
+        } catch (IOException e) {
+            System.out.println("An error occurred while reading the file.");
+            e.printStackTrace();
+        }
+        return false;
+    }
+}
+
+
+if user and password is other than stored then its showing student menu
+in admin menu add 
+    1) Add Account --> store in csv file ==> type-> username -> password
+    2) Remove Account  --> delete from csv file ==> type-> username
+
