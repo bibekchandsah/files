@@ -1,0 +1,130 @@
+Software process Models: 
+	Classical waterfall model, 
+	iterative waterfall model, 
+	prototyping model, 
+	evolutionary model, 
+	spiral model, 
+	RAD model. 
+	Essential Idea behind Agile Models, Agile models:
+Extreme programming and Scrum, 
+Agile versus Other Models
+
+
+Requirement and Design phases
+-----------------------------
+Requirements gathering and Analysis, 
+Requirements elicitation for software analysis, 
+Analysis principles, 
+Specifications (SRS document), 
+IEEE 830 guidelines, 
+Decision tables and trees, 
+software change management and 
+software configuration management
+
+	Structural Analysis & Design
+	............................
+Information Modeling, 
+ERD, 
+Overview of the Design Process, 
+How to Characterize a Good Software Design, 
+Approaches to Software Design, 
+Software Design: cohesion & coupling, neat arrangement, 
+Function–Oriented software design: Structural Analysis, Structural Design (DFD and Structured Chart)
+
+Object Oriented Analysis & Design (Basic Object- Orientation Concepts, Use case diagram, Class diagram, State chart diagram), Command language, menu and iconic interfaces, 
+Architectural Design, 
+Component level Design, 
+User Interface Design, 
+WebApp Design, 
+UML Design
+
+
+Software Project Management
+---------------------------
+Software Project Management Concept, 
+project planning, 
+project processes, 
+Metrics for project size estimation
+
+Project estimation techniques, 
+Empirical estimation techniques, 
+COCOMO models
+
+Scheduling (Work Breakdown Structure, Activity Networks, Critical Path Method (CPM), PERT Charts, Gantt Charts), 
+Organization & team structure, 
+Risk Management
+
+
+
+
+What is Software Engineering?
+-> Engineering approach to develop software.
+
+Why Study Software Engineering? 
+-> To acquire skills to develop large program
+-> Ability to solve complex programming problems
+-> Learn techniques of: specification, design, interface, development, testing, project management
+-> To acquire skills to be a better programmer
+
+Software Crisis
+- fail to meet user requirements.
+- frequently crash.
+- expensive.
+- difficult to alter, debug, and enhance.
+- often delivered late.
+- use resources non-optimally.
+
+Factors contributing to the software crisis
+- Larger problems
+- Lack of adequate training in software engineering
+- Increasing skill shortage
+- Low productivity improvements
+
+Program				 v/s 	Software
+-------------------------------		--------------------------------------
+i) usually small in size	-	Large
+ii) Author himself is sole user	-	Large number of users
+iii) Single developer		-	Team of developer
+iv) Lacks proper user interface	-	Well-designed interface
+v) Lacks proper documentation	-	Well documented & user-manual prepared
+vi) Ad hoc development		-	Systematic development
+
+Computer Systems Engineering
+- encompasses software engineering
+- many products require development of software as well as specific hardware to run it: a coffee vending machine
+- the high-level problem: deciding which tasks are to be solved by software which ones by hardware
+- often hardware & software are developed together
+- integration of hardware & software
+- final system testing
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

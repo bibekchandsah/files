@@ -1,0 +1,28 @@
+How to install g++ in ubuntu
+In the LAB Desktop login to ICT Support user in Ubuntu with the password ictkiit
+
+To update Library use the below command
+sudo apt update
+
+To install gcc use the below command
+sudo apt install build-essential
+
+To install g++ use the below command
+sudo apt install g++
+
+While using the above command you can use the password ictkiit if prompted
+
+
+To create a program you can use gedit or nano
+gedit a.c        (for C program)
+gedit a.cpp    (for C++ program)
+Ctrl + s : to save file in gedit
+Ctrl + q : to close gedit
+
+nano a.c        (for C Program)
+nano a.cpp    (for C++ program)
+Ctrl + s : to save file in nano
+Ctrl + x : to close nano
+
+To Run the Program use the below command
+./a.out

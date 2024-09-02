@@ -1,0 +1,154 @@
+1. What is an open system? Why are some systems not open?
+2. What is the difference between a connection-oriented and connection-less communication protocol?
+
+3. An ATM system is transmitting cells at the OC-3 rate. Each packet is 48 bytes long, and thus fits into a cell. An interrupt takes 1 micro second. What fraction of the CPU is devoted to interrupt handling?
+Ans:
+
+To determine the fraction of CPU time devoted to interrupt handling in an ATM system, we need to follow these steps:
+
+Calculate the OC-3 rate in cells per second:
+
+The OC-3 (Optical Carrier level 3) rate is 155.52 Mbps (OC-1 = 51.84 Mbps). Each ATM cell is 48 bytes long. To convert this to bits, we use:
+48 bytes×8 bits/byte = 384 bits
+
+Now, calculate how many such cells fit into the OC-3 rate:
+
+Number of cells per second = OC-3 rate/Size of each cell in bits
+
+Number of cells per second = 155,520,000 bits/sec / 384 bits per cell
+Number of cells per second = 405,000 cells/sec
+
+Determine the time spent handling each interrupt:
+
+Each cell requires an interrupt, and each interrupt takes 1 microsecond (µs) to handle.
+
+Convert 1 microsecond to seconds:
+1 µs = 1×10^−6 seconds
+
+Calculate the total time spent on interrupts per second:
+
+Since there are 405,000 cells per second, and each cell corresponds to one interrupt:
+
+Total interrupt handling time per second = Number of interrupts per second × Time per interrupt
+
+Total interrupt handling time per second = 405,000×1×10^−6 seconds
+Total interrupt handling time per second = 0.405 seconds
+
+Calculate the fraction of CPU time devoted to interrupt handling:
+
+The CPU time available per second is 1 second. Therefore:
+
+Fraction of CPU time = Total interrupt handling time per second / Time available per second
+= o.405 sec / 1 sec = 0.405 = 40.5 %.
+Therefore, the fraction of CPU time devoted to interrupt handling is 40.5% of CPU time per second.
+
+4. Consider a procedure incr with two integer parameters. The procedure adds one to each parameter. Now suppose that it is called with the same variable twice, for example, incr(i, i), If i is initially 0, what value will it have afterward if:
+(i). Call by value is used.
+(ii). Call by reference is used.
+(iii). Call by copy/restore is used.
+Ans:
+(i). When call by value is used:
+#include <stdio.h>
+void incr(int, int);
+int main() 
+{
+    int i=0;
+    incr(i, i);
+    printf("New i is %d",i);
+    return 0;
+}
+void incr(int * i, int * j)
+ {
+     i = i+1;
+     j = j+1;
+ }
+OUTPUT: New i is 0
+
+(ii). When call by reference is used:
+#include <stdio.h>
+void incr(int*,int*);
+int main() {
+    int i=0;
+    incr(&i, &i);
+    printf("New i is %d",i);
+
+    return 0;
+}
+void incr(int * i, int * j)
+ {
+     *i = *i+1;
+     *j = *j+1;
+ }
+OUTPUT: New i is 2
+
+(iii). When call by copy/restore is used:
+#include <iostream>
+void incr(int &a, int &b)
+ {
+     a = a+1;
+     b = b+1;
+ }
+
+int main()
+ {
+    int i = 0;
+    int copy = i;
+    incr(copy, copy);
+    i = copy;
+    std::cout<<"New i is:"<<i;
+    return 0;
+}
+OUTPUT: New i is:2
+
+5. Suppose the time to do a null RPC (i.e., 0 data bytes) is 1.0 ms, with an additional 1.5 ms for every 1K of data. How long does it take to read 32K from the file server in a single 32K RPC? How about as 32 1K RPCs?
+Ans:
+PART - I
+Given:
+Null RPC Time (0 bytes): 1.0 ms
+Additional Time for Data: 1.5 ms per 1K bytes
+
+Steps to Calculate the Total Time:
+Calculate the Additional Time for 32K Bytes of Data:
+Since the additional time is 1.5 ms per 1K bytes, we need to calculate how many 1K byte increments are in 32K bytes.
+Number of 1K increments = 32K/1K = 32
+
+For each 1K byte increment, the additional time is 1.5 ms. Therefore, for 32 increments:
+Additional time = 32 × 1.5 ms = 48 ms
+
+Add the Null RPC Time:
+
+The null RPC time, which is the base time for the RPC call regardless of data size, is 1.0 ms.
+Calculate the Total Time:
+
+Add the null RPC time to the additional time for the data:
+Total time = Null RPC time + Additional time
+Total time = 1.0 ms + 48 ms = 49 ms.
+The total time to read 32K bytes from the file server in a single 32K RPC is 49 ms.
+
+PART - II:
+Given:
+Null RPC Time (0 bytes): 1.0 ms
+Additional Time for Data: 1.5 ms per 1K bytes
+Number of RPCs: 32 (each handling 1K bytes)
+
+Steps to Calculate the Total Time:
+Calculate the Time for Each 1K RPC:
+Null RPC Time: 1.0 ms
+Additional Time for 1K Bytes: 1.5 ms
+
+Therefore, the total time for each 1K RPC is:
+Time per 1K RPC = Null RPC time + Additional time
+Time per 1K RPC = 1.0 ms + 1.5 ms = 2.5 ms
+
+Calculate the Total Time for 32 RPCs:
+Each RPC takes 2.5 ms, and there are 32 RPCs.
+Total time = Number of RPCs × Time per 1K RPC
+Total time = 32 × 2.5 ms = 80 ms.
+The total time to read 32K bytes from the file server using 32 separate 1K RPCs is 80 ms.
+
+
+
+
+
+
+​
